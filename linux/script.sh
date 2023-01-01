@@ -15,7 +15,7 @@ while [ true ]; do
         touch "exit_codes/server_exit_codes.log";
     fi
     echo "[$(date +"%d.%m.%Y %T")] ExitCode: $?" >> exit_codes/server_exit_codes.log
-    echo "-----Press enter within 5 seconds to cancel the restart-----";
+    echo "-----Press enter within $TIME seconds to cancel the restart-----";
     read -t $TIME input;
     if [ $? == 0 ]; then
         break;
