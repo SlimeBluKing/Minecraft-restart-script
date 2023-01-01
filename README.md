@@ -10,4 +10,5 @@ With this script you can restart your server if it crashes or use a plugin that 
 2. Paste the script into it
 3. Change the values ​​according to your needs
 4. Run this command `chmod +x *.sh`
-5. Run `./start.sh` 
+5. Run `./start.sh`
+6. Now you can connect to the screen with `screen -x ServerName`
