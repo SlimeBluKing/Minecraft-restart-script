@@ -4,7 +4,7 @@ JAR=server.jar
 JDK=java
 MAXRAM=5G
 MINRAM=5G
-TIME=5
+TIME=5 #Seconds
 
 while [ true ]; do
     $JDK -Xmx$MAXRAM -Xms$MINRAM -jar $JAR nogui
