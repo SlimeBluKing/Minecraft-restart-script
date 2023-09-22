@@ -18,3 +18,12 @@ With this script you can restart your server if it crashes or use a plugin that 
 2. Paste the script into it
 3. Change the values according to your needs
 4. Run the script
+
+<br>
+
+## /bin/bash^M: bad interpreter FIX (Linux only)
+Simply run `sed -i -e 's/\r$//' file.sh`
+
+### Why this issue?
+The `^M` is a carriage return character. Linux uses the line feed character to mark the end of a line, whereas Windows uses the two-character sequence CR LF. Your file has Windows line endings, which is confusing Linux.<br>
+If you still have problems with the script contact me on [Discord](https://discord.gg/efM3mnev)
