@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCREENNAME=server.jar
+SCREENNAME=Name
 
 screen -d -m -S $SCREENNAME ./script.sh
 
