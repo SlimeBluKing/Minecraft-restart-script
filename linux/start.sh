@@ -1,3 +1,7 @@
-#!bin/sh
+#!/bin/bash
 
-screen -d -m -S "ScreenName" ./script.sh #Replace "ScreenName" with whatever you want
+SCREENNAME=server.jar
+
+screen -d -m -S $SCREENNAME ./script.sh
+
+echo "$SCREENNAME successfully launched"
